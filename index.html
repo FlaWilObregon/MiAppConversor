@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Números</title>}
+    <meta name="author" content="Flauber Obregon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mi Calculadora</h1>
+        <div class="conversion">
+            <h2 class="subtitle">De decimal a binario, octal y hexadecimal:</h2>
+            <label for="decimal">Ingrese un número decimal:</label>
+            <input type="number" id="decimal">
+            <button onclick="convertirDecimal()">Convertir</button>
+
+            <div id="resultadoDecimal" class="resultado"></div>
+        </div>
+        <div class="conversion">
+            <h2 class="subtitle">De binario a decimal:</h2>
+            <div class="input-group">
+                <label for="binario">Binario:</label>
+                <input type="text" id="binario">
+                <button onclick="convertirBinario()">Convertir</button>
+            </div>
+
+            <div id="resultadoBinOctHex" class="resultado"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
